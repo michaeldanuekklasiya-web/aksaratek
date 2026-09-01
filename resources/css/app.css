@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+    /* Brand Colors */
+    --color-brand-50: oklch(0.97 0.03 200);
+    --color-brand-100: oklch(0.92 0.07 200);
+    --color-brand-200: oklch(0.85 0.12 200);
+    --color-brand-300: oklch(0.76 0.17 200);
+    --color-brand-400: oklch(0.70 0.18 200);
+    --color-brand-500: oklch(0.62 0.18 200);
+    --color-brand-600: oklch(0.52 0.17 200);
+    --color-brand-700: oklch(0.43 0.14 200);
+    --color-brand-800: oklch(0.34 0.11 200);
+    --color-brand-900: oklch(0.26 0.08 200);
+
+    /* Navy Colors */
+    --color-navy-800: #1e293b;
+    --color-navy-900: #0f172a;
+    --color-navy-950: #0a1020;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+    background: #0e7490;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #06b6d4;
+}
+
+/* Transition helpers */
+.transition-smooth {
+    transition: all 0.3s ease;
+}
+
+/* Hero overlay */
+.hero-overlay {
+    background: linear-gradient(
+        to right,
+        rgba(15, 23, 42, 0.92) 0%,
+        rgba(15, 23, 42, 0.7) 50%,
+        rgba(15, 23, 42, 0.2) 100%
+    );
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Count-up animation placeholder */
+@keyframes countUp {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.animate-count {
+    animation: countUp 0.5s ease forwards;
+}
+
+/* Dot active */
+.slider-dot.active {
+    background-color: #06b6d4;
+    width: 24px;
+}
