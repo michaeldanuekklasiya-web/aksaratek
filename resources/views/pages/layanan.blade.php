@@ -1,4 +1,4 @@
-<x-layouts.app title="Layanan — Aksara Karya" meta-description="Layanan lengkap Aksara Karya: manufaktur custom, pengiriman nasional, instalasi, garansi, konsultasi teknis, dan perawatan berkala.">
+<x-layouts.app title="Layanan — CV. Aksa Karya Fibertek" meta-description="Layanan lengkap CV. Aksa Karya Fibertek: manufaktur custom, pengiriman nasional, instalasi, garansi, konsultasi teknis, perawatan berkala, serta service/maintenance tanki.">
 
     {{-- Page Header --}}
     <section class="bg-slate-900 py-20 px-4 relative overflow-hidden">
@@ -72,7 +72,7 @@
             <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Siap Memulai Proyek Anda?</h2>
             <p class="text-slate-500 text-sm mb-7">Hubungi kami sekarang dan dapatkan konsultasi teknis gratis dari tim ahli kami.</p>
             <div class="flex flex-col sm:flex-row gap-3 justify-center">
-                <a href="https://wa.me/6281234567890" target="_blank"
+                <a href="https://wa.me/6282345651976?text=Halo%20CV.%20Aksa%20Karya%20Fibertek%2C%20saya%20ingin%20konsultasi%20layanan" target="_blank"
                    class="inline-flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold px-7 py-3.5 rounded-xl transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5">
                     Konsultasi Gratis via WA
                 </a>

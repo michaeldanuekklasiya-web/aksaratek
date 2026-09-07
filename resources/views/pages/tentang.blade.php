@@ -1,4 +1,4 @@
-<x-layouts.app title="Tentang Kami — Aksara Karya" meta-description="Mengenal Aksara Karya lebih dekat — produsen tangki fiberglass dengan 15+ tahun pengalaman, tersertifikasi ISO, melayani seluruh Indonesia.">
+<x-layouts.app title="Tentang Kami — CV. Aksa Karya Fibertek" meta-description="Mengenal CV. Aksa Karya Fibertek lebih dekat — produsen tangki fiberglass presisi tinggi, tersertifikasi, melayani seluruh Indonesia.">
 
     {{-- Page Header --}}
     <section class="bg-slate-900 py-20 px-4 relative overflow-hidden">
@@ -11,7 +11,7 @@
                 15+ Tahun Merekayasa<br><span class="text-cyan-400">Solusi Terbaik</span>
             </h1>
             <p class="text-slate-400 text-base max-w-xl mx-auto">
-                Dari bengkel kecil di Tangerang hingga menjadi produsen fiberglass terpercaya di Indonesia.
+                Dari bengkel presisi hingga menjadi produsen fiberglass terpercaya di Indonesia.
             </p>
         </div>
     </section>
@@ -23,7 +23,7 @@
                 <div class="relative">
                     <div class="rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80"
-                             alt="Fasilitas Produksi Aksara Karya"
+                             alt="Fasilitas Produksi CV. Aksa Karya Fibertek"
                              class="w-full h-full object-cover">
                     </div>
                     {{-- Stats overlay --}}
@@ -38,11 +38,11 @@
                 </div>
 
                 <div>
-                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Kisah <span class="text-cyan-600">Aksara Karya</span></h2>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Kisah <span class="text-cyan-600">CV. Aksa Karya Fibertek</span></h2>
                     <div class="space-y-4 text-slate-600 text-sm leading-relaxed">
-                        <p>Aksara Karya Utama didirikan pada tahun 2011 oleh sekelompok insinyur berpengalaman yang melihat kebutuhan besar akan produk tangki dan sanitasi berkualitas tinggi di Indonesia.</p>
-                        <p>Bermula dari workshop kecil di Kawasan Industri Tangerang dengan hanya 12 karyawan, kami tumbuh menjadi perusahaan manufaktur fiberglass dengan lebih dari 150 tenaga ahli yang tersebar di fasilitas produksi seluas 5 hektar.</p>
-                        <p>Hari ini, produk-produk Aksara Karya telah melayani lebih dari 1.200 klien institusi di 85+ kota di seluruh Indonesia — dari rumah sakit, hotel berbintang, pabrik, hingga proyek perumahan subsidi pemerintah.</p>
+                        <p>CV. Aksa Karya Fibertek didirikan pada tahun 2011 oleh sekelompok insinyur berpengalaman yang melihat kebutuhan besar akan produk tangki dan sanitasi berkualitas tinggi di Indonesia.</p>
+                        <p>Bermula dari workshop presisi dengan standar tinggi, kami tumbuh menjadi perusahaan manufaktur fiberglass terpercaya dengan tenaga ahli berpengalaman yang siap melayani berbagai kebutuhan skala industri dan instansi.</p>
+                        <p>Hari ini, produk-produk CV. Aksa Karya Fibertek telah melayani lebih dari 1.200 klien institusi di 85+ kota di seluruh Indonesia — dari rumah sakit, hotel berbintang, pabrik, hingga proyek infrastruktur nasional.</p>
                     </div>
 
                     <div class="grid grid-cols-2 gap-4 mt-8">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Response;
 use Illuminate\View\View;
 
 class PageController extends Controller
@@ -53,32 +54,32 @@ class PageController extends Controller
         return view('pages.kontak');
     }
 
-    public function sitemap(): \Illuminate\Http\Response
+    public function sitemap(): Response
     {
         $products = collect($this->getAllProducts());
-        
+
         $xml = '<?xml version="1.0" encoding="UTF-8"?>';
         $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
-        
+
         $routes = ['home', 'produk', 'layanan', 'tentang', 'kontak'];
         foreach ($routes as $route) {
             $xml .= '<url>';
-            $xml .= '<loc>' . route($route) . '</loc>';
+            $xml .= '<loc>'.route($route).'</loc>';
             $xml .= '<changefreq>weekly</changefreq>';
-            $xml .= '<priority>' . ($route === 'home' ? '1.0' : '0.8') . '</priority>';
+            $xml .= '<priority>'.($route === 'home' ? '1.0' : '0.8').'</priority>';
             $xml .= '</url>';
         }
-        
+
         foreach ($products as $product) {
             $xml .= '<url>';
-            $xml .= '<loc>' . route('produk.detail', $product['slug']) . '</loc>';
+            $xml .= '<loc>'.route('produk.detail', $product['slug']).'</loc>';
             $xml .= '<changefreq>monthly</changefreq>';
             $xml .= '<priority>0.9</priority>';
             $xml .= '</url>';
         }
-        
+
         $xml .= '</urlset>';
-        
+
         return response($xml)->header('Content-Type', 'text/xml');
     }
 
@@ -97,49 +98,103 @@ class PageController extends Controller
     {
         return [
             [
-                'slug' => 'tangki-air-fiber',
-                'name' => 'Tangki Air Fiber',
-                'short_desc' => 'Tangki penyimpanan air berbahan fiberglass tahan lama untuk keperluan rumah tangga dan industri.',
-                'description' => 'Tangki air fiberglass kami dirancang dengan teknologi terkini untuk memberikan ketahanan maksimal. Tersedia dalam berbagai kapasitas mulai dari 500 liter hingga 100.000 liter, cocok untuk rumah tangga, gedung, dan industri besar.',
-                'image' => 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format&fit=crop&q=80',
-                'category' => 'Tangki',
-                'specs' => ['Material: Fiberglass Grade A', 'Kapasitas: 500L – 100.000L', 'Garansi: 10 Tahun', 'Standar: SNI & ISO'],
-            ],
-            [
-                'slug' => 'septic-tank-biotech',
-                'name' => 'Septic Tank Biotech',
-                'short_desc' => 'Sistem pengolahan limbah ramah lingkungan standar BPLHD.',
-                'description' => 'Septic tank biotech kami menggunakan sistem biologi aktif yang mengolah limbah secara efisien. Memenuhi standar BPLHD dan Kementerian Lingkungan Hidup, cocok untuk perumahan, hotel, dan fasilitas publik.',
+                'slug' => 'septic-tank',
+                'name' => 'Septic tank',
+                'short_desc' => 'Sistem pengolahan limbah ramah lingkungan.',
+                'description' => 'Septic tank ramah lingkungan berkualitas tinggi yang mengolah limbah secara efisien.',
                 'image' => 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&auto=format&fit=crop&q=80',
                 'category' => 'Sanitasi',
-                'specs' => ['Material: Fiberglass Reinforced', 'Kapasitas: 1.000L – 50.000L', 'Standar: BPLHD & SNI', 'Garansi: 10 Tahun'],
+                'specs' => ['Material: Fiberglass', 'Garansi: 10 Tahun'],
             ],
             [
-                'slug' => 'tangki-air-panel',
-                'name' => 'Tangki Air Panel',
-                'short_desc' => 'Penyimpanan air kapasitas besar untuk gedung dan industri.',
-                'description' => 'Tangki panel fiberglass dapat dirakit di lokasi, memudahkan instalasi di area sempit atau gedung bertingkat. Sistem modular memungkinkan ekspansi kapasitas sesuai kebutuhan.',
-                'image' => 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&auto=format&fit=crop&q=80',
-                'category' => 'Tangki',
-                'specs' => ['Material: Panel GRP', 'Kapasitas: 5.000L – 500.000L', 'Instalasi: Modular On-Site', 'Garansi: 10 Tahun'],
+                'slug' => 'talang-air',
+                'name' => 'Talang Air',
+                'short_desc' => 'Talang air fiberglass tahan cuaca.',
+                'description' => 'Talang air berbahan fiberglass yang kuat dan tahan terhadap cuaca ekstrem.',
+                'image' => 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format&fit=crop&q=80',
+                'category' => 'Aksesoris',
+                'specs' => ['Material: Fiberglass Grade A', 'Garansi: 5 Tahun'],
             ],
             [
-                'slug' => 'sistem-ipal',
-                'name' => 'Sistem IPAL',
-                'short_desc' => 'Instalasi pengolahan air limbah terpadu untuk industri medis.',
-                'description' => 'Sistem IPAL (Instalasi Pengolahan Air Limbah) kami dirancang khusus untuk industri medis, hotel, dan pabrik. Menggunakan teknologi aerob dan anaerob untuk mengolah limbah menjadi air yang aman dibuang ke lingkungan.',
+                'slug' => 'ipal-mbg',
+                'name' => 'IPAL MBG',
+                'short_desc' => 'Instalasi Pengolahan Air Limbah MBG.',
+                'description' => 'Sistem IPAL MBG yang efisien untuk kebutuhan industri dan medis.',
                 'image' => 'https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=600&auto=format&fit=crop&q=80',
                 'category' => 'IPAL',
-                'specs' => ['Kapasitas: Custom', 'Standar: PerMenLH No. 5/2014', 'Teknologi: Aerob & Anaerob', 'Garansi: 2 Tahun'],
+                'specs' => ['Kapasitas: Custom', 'Standar: PerMenLH', 'Garansi: 2 Tahun'],
+            ],
+            [
+                'slug' => 'tanki-panel',
+                'name' => 'Tanki Panel',
+                'short_desc' => 'Penyimpanan air kapasitas besar untuk gedung.',
+                'description' => 'Tangki panel fiberglass sistem modular yang dapat dirakit di lokasi.',
+                'image' => 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&auto=format&fit=crop&q=80',
+                'category' => 'Tangki',
+                'specs' => ['Material: Panel GRP', 'Instalasi: Modular On-Site'],
+            ],
+            [
+                'slug' => 'toilet-portabel',
+                'name' => 'Toilet Portabel',
+                'short_desc' => 'Toilet praktis dan mudah dipindahkan.',
+                'description' => 'Toilet portabel fiberglass yang higienis, kuat, dan mudah dibersihkan.',
+                'image' => 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&auto=format&fit=crop&q=80',
+                'category' => 'Sanitasi',
+                'specs' => ['Material: Fiberglass', 'Sistem: Bio Septic'],
+            ],
+            [
+                'slug' => 'grontank',
+                'name' => 'Grontank',
+                'short_desc' => 'Tangki tanam berkualitas.',
+                'description' => 'Tangki air bawah tanah (ground tank) yang dirancang untuk menahan tekanan tanah.',
+                'image' => 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format&fit=crop&q=80',
+                'category' => 'Tangki',
+                'specs' => ['Material: Fiberglass Extra Tebal', 'Garansi: 10 Tahun'],
+            ],
+            [
+                'slug' => 'toren',
+                'name' => 'Toren',
+                'short_desc' => 'Toren air rumah tangga.',
+                'description' => 'Toren air fiber yang tahan lumut dan aman untuk penyimpanan air bersih.',
+                'image' => 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format&fit=crop&q=80',
+                'category' => 'Tangki',
+                'specs' => ['Material: Fiberglass Anti Lumut', 'Garansi: 10 Tahun'],
+            ],
+            [
+                'slug' => 'tanki-kimia',
+                'name' => 'Tanki Kimia',
+                'short_desc' => 'Tangki penyimpanan bahan kimia industri.',
+                'description' => 'Tangki kimia berbahan fiberglass khusus yang tahan terhadap cairan kimia korosif.',
+                'image' => 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&auto=format&fit=crop&q=80',
+                'category' => 'Tangki Industri',
+                'specs' => ['Material: Chemical Grade FRP', 'Garansi: 5 Tahun'],
             ],
             [
                 'slug' => 'grease-trap',
                 'name' => 'Grease Trap',
-                'short_desc' => 'Perangkap lemak untuk dapur komersial dan restoran.',
-                'description' => 'Grease trap fiberglass kami efektif memisahkan lemak dan minyak dari air limbah dapur. Wajib dipasang untuk restoran, hotel, dan industri makanan sesuai regulasi pemerintah.',
+                'short_desc' => 'Perangkap lemak untuk dapur komersial.',
+                'description' => 'Grease trap fiberglass untuk memisahkan lemak dan minyak dari limbah dapur.',
                 'image' => 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&auto=format&fit=crop&q=80',
                 'category' => 'Sanitasi',
-                'specs' => ['Material: Fiberglass', 'Kapasitas: 100L – 5.000L', 'Standar: Dinas Lingkungan Hidup', 'Garansi: 5 Tahun'],
+                'specs' => ['Material: Fiberglass', 'Kapasitas: Beragam'],
+            ],
+            [
+                'slug' => 'atap-fiber',
+                'name' => 'Atap Fiber',
+                'short_desc' => 'Atap penerangan fiberglass.',
+                'description' => 'Atap tembus cahaya (skylight) berbahan fiberglass untuk pabrik dan gudang.',
+                'image' => 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format&fit=crop&q=80',
+                'category' => 'Material Konstruksi',
+                'specs' => ['Material: Translucent FRP', 'Garansi: 5 Tahun'],
+            ],
+            [
+                'slug' => 'stp',
+                'name' => 'STP',
+                'short_desc' => 'Sewage Treatment Plant.',
+                'description' => 'Sistem pengolahan air limbah domestik terpusat untuk apartemen dan perumahan.',
+                'image' => 'https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=600&auto=format&fit=crop&q=80',
+                'category' => 'IPAL',
+                'specs' => ['Kapasitas: Custom', 'Sistem: Aerobic'],
             ],
         ];
     }
@@ -189,7 +244,6 @@ class PageController extends Controller
     private function getStats(): array
     {
         return [
-            'years' => '15+',
             'projects' => '2.500+',
             'cities' => '85+',
             'clients' => '1.200+',
@@ -231,6 +285,11 @@ class PageController extends Controller
                 'icon' => 'M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15',
                 'title' => 'Perawatan Berkala',
                 'desc' => 'Program maintenance rutin untuk memastikan performa optimal dan umur panjang produk Anda.',
+            ],
+            [
+                'icon' => 'M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z',
+                'title' => 'Service/ Maintenance Tanki',
+                'desc' => 'Layanan perbaikan dan perawatan tangki untuk mengatasi kebocoran dan kerusakan.',
             ],
         ];
     }

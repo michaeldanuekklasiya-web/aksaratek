@@ -1,4 +1,4 @@
-<x-layouts.app title="Katalog Produk — Aksara Karya" meta-description="Lihat semua produk fiberglass Aksara Karya: tangki air, septic tank biotech, sistem IPAL, grease trap, dan banyak lagi.">
+<x-layouts.app title="Katalog Produk — CV. Aksa Karya Fibertek" meta-description="Lihat semua produk fiberglass CV. Aksa Karya Fibertek: tangki air, septic tank, sistem IPAL, grease trap, dan banyak lagi.">
 
     {{-- Page Header --}}
     <section class="bg-slate-900 py-16 px-4">
@@ -68,7 +68,7 @@
         <div class="max-w-2xl mx-auto px-4 text-center">
             <h2 class="text-2xl font-bold text-slate-900 mb-3">Tidak Menemukan yang Anda Cari?</h2>
             <p class="text-slate-500 text-sm mb-6">Kami menerima pesanan custom sesuai spesifikasi dan dimensi yang Anda butuhkan.</p>
-            <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20memesan%20produk%20custom" target="_blank"
+            <a href="https://wa.me/6282345651976?text=Halo%20CV.%20Aksa%20Karya%20Fibertek%2C%20saya%20ingin%20memesan%20produk%20custom" target="_blank"
                class="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold px-7 py-3 rounded-xl transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5">
                 Diskusi Kebutuhan Custom
             </a>
