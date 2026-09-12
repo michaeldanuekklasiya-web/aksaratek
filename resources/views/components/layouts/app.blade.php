@@ -53,7 +53,7 @@
       "@@context": "https://schema.org",
       "@@type": "LocalBusiness",
       "name": "CV. Aksa Karya Fibertek",
-      "image": "{{ asset('images/logo.png') }}",
+      "image": "{{ asset('images/logo.webp') }}",
       "@@id": "{{ url('/') }}",
       "url": "{{ url('/') }}",
       "telephone": "+6282345651976",
@@ -81,7 +81,7 @@
 
                 {{-- Logo --}}
                 <a href="{{ route('home') }}" class="flex items-center gap-3 group">
-                    <img src="{{ asset('images/logo.png') }}" alt="CV. Aksa Karya Fibertek Logo" class="h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-105">
+                    <img src="{{ asset('images/logo.webp') }}" alt="CV. Aksa Karya Fibertek Logo" class="h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-105">
                     <span class="text-lg sm:text-xl font-bold text-slate-900">CV. Aksa Karya Fibertek<span class="text-cyan-500">.</span></span>
                 </a>
 
@@ -244,7 +244,7 @@
                 {{-- Brand --}}
                 <div class="lg:col-span-1">
                     <a href="{{ route('home') }}" class="flex items-center gap-3 mb-4">
-                        <img src="{{ asset('images/logo.png') }}" alt="CV. Aksa Karya Fibertek Logo" class="h-10 w-auto object-contain bg-white/10 p-1 rounded-lg">
+                        <img src="{{ asset('images/logo.webp') }}" alt="CV. Aksa Karya Fibertek Logo" class="h-10 w-auto object-contain bg-white/10 p-1 rounded-lg">
                         <span class="text-xl font-bold text-white">CV. Aksa Karya Fibertek<span class="text-cyan-400">.</span></span>
                     </a>
                     <p class="text-slate-400 text-sm leading-relaxed mb-5">

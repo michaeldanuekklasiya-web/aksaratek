@@ -360,7 +360,7 @@
                 {{-- Right: Image + Badge --}}
                 <div class="relative">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop&q=80"
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop&q=80"
                              alt="Fasilitas Pabrik CV. Aksa Karya Fibertek"
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-br from-transparent to-slate-900/40"></div>
