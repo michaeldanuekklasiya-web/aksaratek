@@ -10,7 +10,7 @@
 
             {{-- Slide 1 --}}
             <div class="hero-slide absolute inset-0 transition-opacity duration-700" data-slide="0">
-                <img src="{{ asset('images/slider-2.jpg') }}"
+                <img src="{{ asset('images/slider-2.webp') }}"
                      alt="Tangki Fiber CV. Aksa Karya Fibertek"
                      class="absolute inset-0 w-full h-full object-cover grayscale-[30%]">
                 <div class="hero-overlay absolute inset-0"></div>
