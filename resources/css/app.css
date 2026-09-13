@@ -19,6 +19,19 @@
     --color-brand-800: oklch(0.34 0.11 200);
     --color-brand-900: oklch(0.26 0.08 200);
 
+    /* Blue Colors */
+    --color-blue-50: #eef7fc;
+    --color-blue-100: #daeff8;
+    --color-blue-200: #b5def1;
+    --color-blue-300: #88c6e8;
+    --color-blue-400: #55aadb;
+    --color-blue-500: #057dcd;
+    --color-blue-600: #0464a4;
+    --color-blue-700: #034b7b;
+    --color-blue-800: #023252;
+    --color-blue-900: #011929;
+    --color-blue-950: #0e2944;
+
     /* Navy Colors */
     --color-navy-800: #1e293b;
     --color-navy-900: #0f172a;
@@ -38,11 +51,11 @@ html {
     background: #f1f5f9;
 }
 ::-webkit-scrollbar-thumb {
-    background: #0e7490;
+    background: #034b7b;
     border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #06b6d4;
+    background: #057dcd;
 }
 
 /* Transition helpers */
@@ -88,6 +101,6 @@ html {
 
 /* Dot active */
 .slider-dot.active {
-    background-color: #06b6d4;
+    background-color: #057dcd;
     width: 24px;
 }

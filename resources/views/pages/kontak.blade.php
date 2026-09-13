@@ -1,12 +1,12 @@
-<x-layouts.app title="Kontak — CV. Aksa Karya Fibertek" meta-description="Hubungi CV. Aksa Karya Fibertek untuk konsultasi, penawaran, atau pertanyaan seputar produk tangki fiberglass dan sistem sanitasi kami.">
+﻿<x-layouts.app title="Kontak â€” CV. Aksa Karya Fibertek" meta-description="Hubungi CV. Aksa Karya Fibertek untuk konsultasi, penawaran, atau pertanyaan seputar produk tangki fiberglass dan sistem sanitasi kami.">
 
     {{-- Page Header --}}
     <section class="bg-slate-900 py-20 px-4 relative overflow-hidden">
         <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-0 right-0 w-96 h-96 bg-cyan-500 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+            <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
         </div>
         <div class="max-w-7xl mx-auto relative z-10 text-center">
-            <div class="inline-block bg-cyan-500/20 text-cyan-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-4">Hubungi Kami</div>
+            <div class="inline-block bg-blue-500/20 text-blue-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-4">Hubungi Kami</div>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Kami Siap Membantu Anda</h1>
             <p class="text-slate-400 text-base max-w-xl mx-auto">
                 Tim teknis CV. Aksa Karya Fibertek siap menjawab pertanyaan, memberikan konsultasi, dan menyiapkan penawaran terbaik untuk Anda.
@@ -23,7 +23,7 @@
                 <div class="lg:col-span-2 space-y-6">
                     <div>
                         <h2 class="text-2xl font-bold text-slate-900 mb-2">Informasi Kontak</h2>
-                        <p class="text-slate-500 text-sm">Tersedia Senin–Sabtu, 08.00–17.00 WIB</p>
+                        <p class="text-slate-500 text-sm">Tersedia Seninâ€“Sabtu, 08.00â€“17.00 WIB</p>
                     </div>
 
                     @foreach([
@@ -46,9 +46,9 @@
                             'href' => 'mailto:aksakaryafibertek@gmail.com',
                         ],
                     ] as $contact)
-                        <div class="flex items-start gap-4 bg-white rounded-xl p-5 border border-slate-200 hover:border-cyan-300 transition-colors duration-200">
-                            <div class="w-11 h-11 bg-cyan-50 rounded-lg flex items-center justify-center shrink-0">
-                                <svg class="w-5 h-5 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="flex items-start gap-4 bg-white rounded-xl p-5 border border-slate-200 hover:border-blue-300 transition-colors duration-200">
+                            <div class="w-11 h-11 bg-blue-50 rounded-lg flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{ $contact['icon'] }}"/>
                                 </svg>
                             </div>
@@ -56,7 +56,7 @@
                                 <div class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-1">{{ $contact['title'] }}</div>
                                 @foreach($contact['lines'] as $line)
                                     @if($contact['href'])
-                                        <a href="{{ $contact['href'] }}" target="_blank" class="block text-slate-800 text-sm font-medium hover:text-cyan-600 transition-colors duration-150">{{ $line }}</a>
+                                        <a href="{{ $contact['href'] }}" target="_blank" class="block text-slate-800 text-sm font-medium hover:text-blue-600 transition-colors duration-150">{{ $line }}</a>
                                     @else
                                         <div class="text-slate-800 text-sm font-medium">{{ $line }}</div>
                                     @endif
@@ -89,12 +89,12 @@
                                 <div>
                                     <label for="nama" class="block text-sm font-medium text-slate-700 mb-1.5">Nama Lengkap <span class="text-red-500">*</span></label>
                                     <input type="text" id="nama" name="nama" required placeholder="Budi Santoso"
-                                           class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200">
+                                           class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200">
                                 </div>
                                 <div>
                                     <label for="perusahaan" class="block text-sm font-medium text-slate-700 mb-1.5">Perusahaan</label>
                                     <input type="text" id="perusahaan" name="perusahaan" placeholder="PT. Contoh Indonesia"
-                                           class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200">
+                                           class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200">
                                 </div>
                             </div>
 
@@ -102,19 +102,19 @@
                                 <div>
                                     <label for="email" class="block text-sm font-medium text-slate-700 mb-1.5">Email <span class="text-red-500">*</span></label>
                                     <input type="email" id="email" name="email" required placeholder="budi@example.com"
-                                           class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200">
+                                           class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200">
                                 </div>
                                 <div>
                                     <label for="telepon" class="block text-sm font-medium text-slate-700 mb-1.5">No. Telepon <span class="text-red-500">*</span></label>
                                     <input type="tel" id="telepon" name="telepon" required placeholder="082345651976"
-                                           class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200">
+                                           class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200">
                                 </div>
                             </div>
 
                             <div>
                                 <label for="produk" class="block text-sm font-medium text-slate-700 mb-1.5">Produk yang Diminati</label>
                                 <select id="produk" name="produk"
-                                        class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200">
+                                        class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200">
                                     <option value="">-- Pilih Produk --</option>
                                     @foreach([
                                         'Septic tank',
@@ -139,11 +139,11 @@
                             <div>
                                 <label for="pesan" class="block text-sm font-medium text-slate-700 mb-1.5">Pesan / Kebutuhan <span class="text-red-500">*</span></label>
                                 <textarea id="pesan" name="pesan" required rows="5" placeholder="Ceritakan kebutuhan Anda, kapasitas tangki yang dibutuhkan, lokasi proyek, dll..."
-                                          class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200 resize-none"></textarea>
+                                          class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"></textarea>
                             </div>
 
                             <button type="submit" id="submit-btn"
-                                    class="w-full flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold px-6 py-4 rounded-xl transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5">
+                                    class="w-full flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-4 rounded-xl transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
                                 </svg>
@@ -170,13 +170,13 @@
              class="w-full h-full object-cover opacity-60">
         <div class="absolute inset-0 flex items-center justify-center">
             <a href="https://maps.app.goo.gl/Sk7qvzbi3r7bTGVF7?g_st=aw" target="_blank" class="bg-white rounded-2xl shadow-xl p-5 text-center max-w-sm mx-4 hover:scale-105 transition-transform duration-200 group">
-                <div class="w-10 h-10 bg-cyan-500 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-cyan-400 transition-colors">
+                <div class="w-10 h-10 bg-blue-500 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-blue-400 transition-colors">
                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                     </svg>
                 </div>
                 <div class="font-semibold text-slate-900 text-sm">CV. Aksa Karya Fibertek</div>
-                <div class="text-cyan-600 text-xs font-medium mt-1">Buka Alamat Workshop di Google Maps &rarr;</div>
+                <div class="text-blue-600 text-xs font-medium mt-1">Buka Alamat Workshop di Google Maps &rarr;</div>
             </a>
         </div>
     </section>

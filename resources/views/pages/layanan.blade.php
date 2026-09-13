@@ -1,14 +1,14 @@
-<x-layouts.app title="Layanan — CV. Aksa Karya Fibertek" meta-description="Layanan lengkap CV. Aksa Karya Fibertek: manufaktur custom, pengiriman nasional, instalasi, garansi, konsultasi teknis, perawatan berkala, serta service/maintenance tanki.">
+﻿<x-layouts.app title="Layanan â€” CV. Aksa Karya Fibertek" meta-description="Layanan lengkap CV. Aksa Karya Fibertek: manufaktur custom, pengiriman nasional, instalasi, garansi, konsultasi teknis, perawatan berkala, serta service/maintenance tanki.">
 
     {{-- Page Header --}}
     <section class="bg-slate-900 py-20 px-4 relative overflow-hidden">
         <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-0 right-0 w-96 h-96 bg-cyan-500 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
-            <div class="absolute bottom-0 left-0 w-64 h-64 bg-cyan-600 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
+            <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-600 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
         </div>
         <div class="max-w-7xl mx-auto relative z-10 text-center">
-            <div class="inline-block bg-cyan-500/20 text-cyan-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-4">Layanan Kami</div>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Solusi Lengkap dari<br><span class="text-cyan-400">Awal hingga Akhir</span></h1>
+            <div class="inline-block bg-blue-500/20 text-blue-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-4">Layanan Kami</div>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Solusi Lengkap dari<br><span class="text-blue-400">Awal hingga Akhir</span></h1>
             <p class="text-slate-400 text-base max-w-xl mx-auto">
                 Kami menyediakan layanan end-to-end mulai dari konsultasi teknis, manufaktur, pengiriman, hingga instalasi dan perawatan berkala.
             </p>
@@ -20,14 +20,14 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 @foreach($services as $i => $service)
-                    <div class="group bg-white rounded-2xl border border-slate-200 p-7 hover:border-cyan-300 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                        <div class="w-14 h-14 bg-cyan-50 border border-cyan-100 rounded-xl flex items-center justify-center mb-5 group-hover:bg-cyan-500 transition-colors duration-300">
-                            <svg class="w-7 h-7 text-cyan-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="group bg-white rounded-2xl border border-slate-200 p-7 hover:border-blue-300 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-14 h-14 bg-blue-50 border border-blue-100 rounded-xl flex items-center justify-center mb-5 group-hover:bg-blue-500 transition-colors duration-300">
+                            <svg class="w-7 h-7 text-blue-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="{{ $service['icon'] }}"/>
                             </svg>
                         </div>
                         <div class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-2">Layanan {{ str_pad($i + 1, 2, '0', STR_PAD_LEFT) }}</div>
-                        <h2 class="text-lg font-bold text-slate-900 mb-3 group-hover:text-cyan-600 transition-colors duration-200">{{ $service['title'] }}</h2>
+                        <h2 class="text-lg font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors duration-200">{{ $service['title'] }}</h2>
                         <p class="text-slate-500 text-sm leading-relaxed">{{ $service['desc'] }}</p>
                     </div>
                 @endforeach
@@ -57,7 +57,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="{{ $step[3] }}"/>
                             </svg>
                         </div>
-                        <div class="text-xs text-cyan-600 font-bold uppercase tracking-widest mb-1">STEP {{ $step[0] }}</div>
+                        <div class="text-xs text-blue-600 font-bold uppercase tracking-widest mb-1">STEP {{ $step[0] }}</div>
                         <h3 class="text-base font-bold text-slate-900 mb-2">{{ $step[1] }}</h3>
                         <p class="text-slate-500 text-sm leading-relaxed">{{ $step[2] }}</p>
                     </div>
@@ -73,11 +73,11 @@
             <p class="text-slate-500 text-sm mb-7">Hubungi kami sekarang dan dapatkan konsultasi teknis gratis dari tim ahli kami.</p>
             <div class="flex flex-col sm:flex-row gap-3 justify-center">
                 <a href="https://wa.me/6282345651976?text=Halo%20CV.%20Aksa%20Karya%20Fibertek%2C%20saya%20ingin%20konsultasi%20layanan" target="_blank"
-                   class="inline-flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold px-7 py-3.5 rounded-xl transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5">
+                   class="inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-400 text-white font-semibold px-7 py-3.5 rounded-xl transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5">
                     Konsultasi Gratis via WA
                 </a>
                 <a href="{{ route('kontak') }}"
-                   class="inline-flex items-center justify-center gap-2 border-2 border-slate-300 hover:border-cyan-400 text-slate-700 hover:text-cyan-600 font-semibold px-7 py-3.5 rounded-xl transition-all duration-200">
+                   class="inline-flex items-center justify-center gap-2 border-2 border-slate-300 hover:border-blue-400 text-slate-700 hover:text-blue-600 font-semibold px-7 py-3.5 rounded-xl transition-all duration-200">
                     Kirim Pesan
                 </a>
             </div>
