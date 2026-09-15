@@ -1,4 +1,4 @@
-<x-layouts.app title="Kontak â€” CV. Aksa Karya Fibertek" meta-description="Hubungi CV. Aksa Karya Fibertek untuk konsultasi, penawaran, atau pertanyaan seputar produk tangki fiberglass dan sistem sanitasi kami.">
+<x-layouts.app title="Kontak | CV. Aksa Karya Fibertek" meta-description="Hubungi CV. Aksa Karya Fibertek untuk konsultasi, penawaran, atau pertanyaan seputar produk tangki fiberglass dan sistem sanitasi kami.">
 
     {{-- Page Header --}}
     <section class="bg-slate-900 py-20 px-4 relative overflow-hidden">

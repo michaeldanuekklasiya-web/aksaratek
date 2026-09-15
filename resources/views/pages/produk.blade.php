@@ -1,4 +1,4 @@
-﻿<x-layouts.app title="Katalog Produk â€” CV. Aksa Karya Fibertek" meta-description="Lihat semua produk fiberglass CV. Aksa Karya Fibertek: tangki air, septic tank, sistem IPAL, grease trap, dan banyak lagi.">
+<x-layouts.app title="Katalog Produk | CV. Aksa Karya Fibertek" meta-description="Lihat semua produk fiberglass CV. Aksa Karya Fibertek: tangki air, septic tank, sistem IPAL, grease trap, dan banyak lagi.">
 
     {{-- Page Header --}}
     <section class="bg-slate-900 py-16 px-4">

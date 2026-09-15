@@ -1,4 +1,4 @@
-﻿<x-layouts.app :title="$product['name'] . ' â€” CV. Aksa Karya Fibertek'" :meta-description="$product['short_desc']">
+<x-layouts.app :title="$product['name'] . ' | CV. Aksa Karya Fibertek'" :meta-description="$product['short_desc']">
 
     {{-- Breadcrumb --}}
     <section class="bg-slate-50 border-b border-slate-200">

@@ -1,4 +1,4 @@
-﻿<x-layouts.app title="Tentang Kami â€” CV. Aksa Karya Fibertek" meta-description="Mengenal CV. Aksa Karya Fibertek lebih dekat â€” produsen tangki fiberglass presisi tinggi, tersertifikasi, melayani seluruh Indonesia.">
+<x-layouts.app title="Tentang Kami | CV. Aksa Karya Fibertek" meta-description="Mengenal CV. Aksa Karya Fibertek lebih dekat - produsen tangki fiberglass presisi tinggi, tersertifikasi, melayani seluruh Indonesia.">
 
     {{-- Page Header --}}
     <section class="bg-slate-900 py-20 px-4 relative overflow-hidden">
@@ -42,7 +42,7 @@
                     <div class="space-y-4 text-slate-600 text-sm leading-relaxed">
                         <p>CV. Aksa Karya Fibertek didirikan pada tahun 2011 oleh sekelompok insinyur berpengalaman yang melihat kebutuhan besar akan produk tangki dan sanitasi berkualitas tinggi di Indonesia.</p>
                         <p>Bermula dari workshop presisi dengan standar tinggi, kami tumbuh menjadi perusahaan manufaktur fiberglass terpercaya dengan tenaga ahli berpengalaman yang siap melayani berbagai kebutuhan skala industri dan instansi.</p>
-                        <p>Hari ini, produk-produk CV. Aksa Karya Fibertek telah melayani lebih dari 1.200 klien institusi di 85+ kota di seluruh Indonesia â€” dari rumah sakit, hotel berbintang, pabrik, hingga proyek infrastruktur nasional.</p>
+                        <p>Hari ini, produk-produk CV. Aksa Karya Fibertek telah melayani lebih dari 1.200 klien institusi di 85+ kota di seluruh Indonesia - dari rumah sakit, hotel berbintang, pabrik, hingga proyek infrastruktur nasional.</p>
                     </div>
 
                     <div class="grid grid-cols-2 gap-4 mt-8">

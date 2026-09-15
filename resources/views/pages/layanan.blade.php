@@ -1,4 +1,4 @@
-﻿<x-layouts.app title="Layanan â€” CV. Aksa Karya Fibertek" meta-description="Layanan lengkap CV. Aksa Karya Fibertek: manufaktur custom, pengiriman nasional, instalasi, garansi, konsultasi teknis, perawatan berkala, serta service/maintenance tanki.">
+<x-layouts.app title="Layanan | CV. Aksa Karya Fibertek" meta-description="Layanan lengkap CV. Aksa Karya Fibertek: manufaktur custom, pengiriman nasional, instalasi, garansi, konsultasi teknis, perawatan berkala, serta service/maintenance tanki.">
 
     {{-- Page Header --}}
     <section class="bg-slate-900 py-20 px-4 relative overflow-hidden">
