@@ -3,11 +3,12 @@
     'metaDescription' => 'CV. Aksa Karya Fibertek Produsen tangki air, septic tank, dan produk fiberglass custom bergaransi, tersertifikasi, siap kirim ke seluruh Indonesia.',
     'metaKeywords' => 'tangki fiberglass, septic tank biotech, IPAL, grease trap, aksa karya fibertek, tangki air panel',
     'canonicalUrl' => null,
-    'ogImage' => 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&q=80',
+    'ogImage' => null,
     'ogType' => 'website',
 ])
 @php
     $canonical = $canonicalUrl ?? url()->current();
+    $ogImage = $ogImage ?? asset('images/logo.webp');
 @endphp
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
