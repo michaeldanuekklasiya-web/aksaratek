@@ -36,7 +36,7 @@
                         <div class="aspect-[4/3] overflow-hidden relative">
                             <img src="{{ $product['image'] }}"
                                  alt="{{ $product['name'] }}"
-                                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 loading='lazy'">
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 loading='lazy'">
                             <div class="absolute top-3 left-3">
                                 <span class="bg-white/90 backdrop-blur-sm text-slate-700 text-xs font-medium px-2.5 py-1 rounded-full">{{ $product['category'] }}</span>
                             </div>

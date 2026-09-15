@@ -116,15 +116,6 @@ class PageController extends Controller
                 'specs' => ['Material: Fiberglass Grade A', 'Garansi: 5 Tahun'],
             ],
             [
-                'slug' => 'ipal-mbg',
-                'name' => 'IPAL MBG',
-                'short_desc' => 'Instalasi Pengolahan Air Limbah MBG.',
-                'description' => 'Sistem IPAL MBG yang efisien untuk kebutuhan industri dan medis.',
-                'image' => asset('images/IPAL MBG.webp'),
-                'category' => 'IPAL',
-                'specs' => ['Kapasitas: Custom', 'Standar: PerMenLH', 'Garansi: 2 Tahun'],
-            ],
-            [
                 'slug' => 'tanki-panel',
                 'name' => 'Tanki Panel',
                 'short_desc' => 'Penyimpanan air kapasitas besar untuk gedung.',

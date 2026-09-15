@@ -108,7 +108,6 @@
                                 @foreach([
                                     ['slug' => 'septic-tank', 'name' => 'Septic tank'],
                                     ['slug' => 'talang-air', 'name' => 'Talang Air'],
-                                    ['slug' => 'ipal-mbg', 'name' => 'IPAL MBG'],
                                     ['slug' => 'tanki-panel', 'name' => 'Tanki Panel'],
                                     ['slug' => 'toilet-portabel', 'name' => 'Toilet Portabel'],
                                     ['slug' => 'toren', 'name' => 'Toren'],
@@ -281,7 +280,6 @@
                         @foreach([
                             ['Septic tank', 'septic-tank'],
                             ['Talang Air', 'talang-air'],
-                            ['IPAL MBG', 'ipal-mbg'],
                             ['Tanki Panel', 'tanki-panel'],
                             ['Toilet Portabel', 'toilet-portabel'],
                         ] as [$label, $slug])
@@ -302,7 +300,13 @@
                             <svg class="w-4 h-4 text-blue-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                             </svg>
-                            <a href="https://maps.app.goo.gl/GdVQpnnLbs3afmc99?g_st=ic" target="_blank" class="text-slate-400 hover:text-blue-400 transition-colors text-sm">Workshop CV. Aksa Karya Fibertek</a>
+                            <a href="https://maps.app.goo.gl/GdVQpnnLbs3afmc99?g_st=ic" target="_blank" class="text-slate-400 hover:text-blue-400 transition-colors text-sm">Kantor CV. Aksa Karya Fibertek</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-4 h-4 text-blue-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/Sk7qvzbi3r7bTGVF7?g_st=aw" target="_blank" class="text-slate-400 hover:text-blue-400 transition-colors text-sm">Workshop CV. Aksa Karya Fibertek</a>
                         </li>
                         <li class="flex items-center gap-3">
                             <svg class="w-4 h-4 text-blue-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

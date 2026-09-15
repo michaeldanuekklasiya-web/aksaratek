@@ -1,4 +1,4 @@
-﻿<x-layouts.app title="CV. Aksa Karya Fibertek" meta-description="CV. Aksa Karya Fibertek Produsen tangki air, septic tank, dan produk fiberglass custom bergaransi, tersertifikasi, siap kirim ke seluruh Indonesia.">
+<x-layouts.app title="CV. Aksa Karya Fibertek" meta-description="CV. Aksa Karya Fibertek Produsen tangki air, septic tank, dan produk fiberglass custom bergaransi, tersertifikasi, siap kirim ke seluruh Indonesia.">
 
     {{-- ============================================================ --}}
     {{-- HERO SLIDER SECTION --}}
@@ -270,7 +270,7 @@
                         <div class="aspect-[4/3] overflow-hidden">
                             <img src="{{ $product['image'] }}"
                                  alt="{{ $product['name'] }}"
-                                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500">
                         </div>
                         <div class="p-6 flex flex-col flex-1">
                             <div class="inline-block bg-slate-100 text-slate-600 text-xs font-medium px-2.5 py-0.5 rounded-full mb-3 w-fit">{{ $product['category'] }}</div>
