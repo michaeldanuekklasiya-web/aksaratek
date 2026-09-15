@@ -1,4 +1,4 @@
-﻿<x-layouts.app title="Kontak â€” CV. Aksa Karya Fibertek" meta-description="Hubungi CV. Aksa Karya Fibertek untuk konsultasi, penawaran, atau pertanyaan seputar produk tangki fiberglass dan sistem sanitasi kami.">
+<x-layouts.app title="Kontak â€” CV. Aksa Karya Fibertek" meta-description="Hubungi CV. Aksa Karya Fibertek untuk konsultasi, penawaran, atau pertanyaan seputar produk tangki fiberglass dan sistem sanitasi kami.">
 
     {{-- Page Header --}}
     <section class="bg-slate-900 py-20 px-4 relative overflow-hidden">
@@ -30,8 +30,8 @@
                         [
                             'icon' => 'M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z',
                             'title' => 'Alamat Workshop',
-                            'lines' => ['Workshop CV. Aksa Karya Fibertek', 'Klik untuk Buka Google Maps'],
-                            'href' => 'https://maps.app.goo.gl/Sk7qvzbi3r7bTGVF7?g_st=aw',
+                            'lines' => ['Jl. Kp. Belakang No.rt 08.03, RT.1/RW.3, Kamal, Kec. Kalideres, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11810'],
+                            'href' => 'https://maps.app.goo.gl/GdVQpnnLbs3afmc99?g_st=ic',
                         ],
                         [
                             'icon' => 'M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z',
@@ -122,7 +122,6 @@
                                         'IPAL MBG',
                                         'Tanki Panel',
                                         'Toilet Portabel',
-                                        'Grontank',
                                         'Toren',
                                         'Tanki Kimia',
                                         'Grease Trap',
@@ -169,7 +168,7 @@
              alt="Lokasi CV. Aksa Karya Fibertek"
              class="w-full h-full object-cover opacity-60">
         <div class="absolute inset-0 flex items-center justify-center">
-            <a href="https://maps.app.goo.gl/Sk7qvzbi3r7bTGVF7?g_st=aw" target="_blank" class="bg-white rounded-2xl shadow-xl p-5 text-center max-w-sm mx-4 hover:scale-105 transition-transform duration-200 group">
+            <a href="https://maps.app.goo.gl/GdVQpnnLbs3afmc99?g_st=ic" target="_blank" class="bg-white rounded-2xl shadow-xl p-5 text-center max-w-sm mx-4 hover:scale-105 transition-transform duration-200 group">
                 <div class="w-10 h-10 bg-blue-500 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-blue-400 transition-colors">
                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>

@@ -1,4 +1,4 @@
-﻿@props([
+@props([
     'title' => 'CV. Aksa Karya Fibertek Solusi Tangki & Sanitasi Fiber Presisi Tinggi',
     'metaDescription' => 'CV. Aksa Karya Fibertek Produsen tangki air, septic tank, dan produk fiberglass custom bergaransi, tersertifikasi, siap kirim ke seluruh Indonesia.',
     'metaKeywords' => 'tangki fiberglass, septic tank biotech, IPAL, grease trap, aksa karya fibertek, tangki air panel',
@@ -66,7 +66,7 @@
         "postalCode": "15122",
         "addressCountry": "ID"
       },
-      "hasMap": "https://maps.app.goo.gl/Sk7qvzbi3r7bTGVF7?g_st=aw"
+      "hasMap": "https://maps.app.goo.gl/GdVQpnnLbs3afmc99?g_st=ic"
     }
     </script>
     
@@ -111,7 +111,6 @@
                                     ['slug' => 'ipal-mbg', 'name' => 'IPAL MBG'],
                                     ['slug' => 'tanki-panel', 'name' => 'Tanki Panel'],
                                     ['slug' => 'toilet-portabel', 'name' => 'Toilet Portabel'],
-                                    ['slug' => 'grontank', 'name' => 'Grontank'],
                                     ['slug' => 'toren', 'name' => 'Toren'],
                                     ['slug' => 'tanki-kimia', 'name' => 'Tanki Kimia'],
                                     ['slug' => 'grease-trap', 'name' => 'Grease Trap'],
@@ -285,7 +284,6 @@
                             ['IPAL MBG', 'ipal-mbg'],
                             ['Tanki Panel', 'tanki-panel'],
                             ['Toilet Portabel', 'toilet-portabel'],
-                            ['Grontank', 'grontank'],
                         ] as [$label, $slug])
                             <li>
                                 <a href="{{ route('produk.detail', $slug) }}" class="text-slate-400 hover:text-blue-400 text-sm transition-colors duration-150">
@@ -304,7 +302,7 @@
                             <svg class="w-4 h-4 text-blue-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                             </svg>
-                            <a href="https://maps.app.goo.gl/Sk7qvzbi3r7bTGVF7?g_st=aw" target="_blank" class="text-slate-400 hover:text-blue-400 transition-colors text-sm">Workshop CV. Aksa Karya Fibertek</a>
+                            <a href="https://maps.app.goo.gl/GdVQpnnLbs3afmc99?g_st=ic" target="_blank" class="text-slate-400 hover:text-blue-400 transition-colors text-sm">Workshop CV. Aksa Karya Fibertek</a>
                         </li>
                         <li class="flex items-center gap-3">
                             <svg class="w-4 h-4 text-blue-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -58,7 +58,7 @@
 
             {{-- Slide 2 --}}
             <div class="hero-slide absolute inset-0 transition-opacity duration-700 opacity-0" data-slide="1">
-                <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1600&auto=format&fit=crop&q=80"
+                <img src="{{ asset('images/tor.webp') }}"
                      alt="Produk Fiberglass Berkualitas"
                      class="absolute inset-0 w-full h-full object-cover grayscale-[30%]">
                 <div class="hero-overlay absolute inset-0"></div>

@@ -143,15 +143,6 @@ class PageController extends Controller
                 'specs' => ['Material: Fiberglass', 'Sistem: Bio Septic'],
             ],
             [
-                'slug' => 'grontank',
-                'name' => 'Grontank',
-                'short_desc' => 'Tangki tanam berkualitas.',
-                'description' => 'Tangki air bawah tanah (ground tank) yang dirancang untuk menahan tekanan tanah.',
-                'image' => asset('images/Grontank.webp'),
-                'category' => 'Tangki',
-                'specs' => ['Material: Fiberglass Extra Tebal', 'Garansi: 10 Tahun'],
-            ],
-            [
                 'slug' => 'toren',
                 'name' => 'Toren',
                 'short_desc' => 'Toren air rumah tangga.',
